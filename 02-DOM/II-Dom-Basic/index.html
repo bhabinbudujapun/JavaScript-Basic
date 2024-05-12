@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom-Pratice-II</title>
 </head>
-<body>
-    
+
+<body style="background-color: #212121; color: #fff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
 </body>
+
+<script>
+
+    //ADD LANGUAGE
+    function addLang(lang) {
+        const li = document.createElement('li');
+        li.innerHTML = lang;
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang('php')
+    addLang('python')
+
+    //Optimize way to add language
+    function addLangOptimi(lang) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLangOptimi('C')
+    addLangOptimi('C++')
+    addLangOptimi('JAVA')
+
+
+    //EDIT LANAGUAGE
+    const secondLang = document.querySelector('li:nth-child(2)')
+    //Method - i
+    secondLang.innerHTML = 'Adv. PHP'
+
+    //Method - ii
+    secondLang.textContent = 'Adv.-I PHP'
+
+    //Method - iii
+    const li = document.createElement('li')
+    li.textContent = 'Adv.-II PHP'
+    secondLang.replaceWith(li)
+
+    const secondLanguage = document.querySelector('li:nth-child(2)')
+    secondLanguage.innerHTML = '<li> Adv.-III PHP </li>'
+
+    //REMOVE LANGUAGE
+    const lastLanguage = document.querySelector('li:last-child')
+    lastLanguage.remove()
+
+</script>
+
 </html>
