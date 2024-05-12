@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-PRACTICE</title>
+</head>
+
+<body style="background-color: #212121; color: #ffffff">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    /*
+    IMPLEMENTING --- * * QUERY-SELECTOR * * 
+    1) console.log for parent elements
+    const tempCollection = document.querySelector('.parent');
+    for (let index = 0; index < tempCollection.children.length; index++) {
+        console.log(tempCollection.children[index].textContent);
+    }
+
+    2) querySelector --- it select the first element from all the element
+    const tempDay = document.querySelector('.day')
+    console.log(tempDay.innerHTML)
+
+    3) querySelector --- back to parent element through child
+    const tempDay = document.querySelector('.day')
+    console.log(tempDay.parentElement)
+    console.log(tempDay.nextElementSibling.innerHTML)
+    console.log(tempDay.parentElement.childNodes)
+ 
+    4) create, append (id, class and content)
+    */
+    const div = document.createElement('div');
+    div.className = 'divClass'
+
+    div.id = 'divId'
+    div.innerHTML = 'Fri'
+    document.body.appendChild(div)
+
+    textAdd = document.createTextNode('day')
+    div.appendChild(textAdd)
+
+</script>
+
+</html>
