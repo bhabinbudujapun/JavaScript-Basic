@@ -4,12 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a03c2a7c2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <title>project - ii</title>
 </head>
 
-<body class="bg-gray-600">
-    <h1 class="text-white text-2xl">hello, world</h1>
+<body class="bg-[#375748]">
+    <div class="mt-4">
+        <div class="flex flex-col gap-7 h-screen items-center">
+            <div class="text-center text-[#d9e9e1]">
+                <h1 class="text-4xl font-normal">Calculate your</h1>
+                <h1 class="text-4xl font-normal">Body Mass Index</h1>
+            </div>
+            <div class="flex flex-row gap-4">
+                <button type="button"
+                    class="px-11 py-1 rounded-lg text-lg font-semibold bg-[#5e786b] text-[#8fa399]">Standard</button>
+                <button type="button"
+                    class="px-11 py-1 rounded-lg text-lg font-semibold bg-[#f1f3f2] text-[#484d4a]">Metric</button>
+            </div>
+            <div class="flex flex-row gap-7">
+                <button type="button" class="rounded-lg bg-[#5e786b]">
+                    <i class="fa-solid fa-person text-9xl px-8 py-4 text-[#f1f3f2]"></i>
+                    <h1 class="text-xl font-semibold text-[#f1f3f2]">Male</h1>
+                </button>
+                <button type="button" class="rounded-lg bg-[#5e786b]">
+                    <i class="fa-solid fa-person-dress text-9xl px-8 py-4 text-[#8fa399]"></i>
+                    <h1 class="text-xl font-semibold text-[#8fa399]">Female</h1>
+                </button>
+            </div>
+            <form action="post">
+                <div class="">
+                    <label for="Weight" class="text-lg font-semibold text-[#8fa399]">Weight in kg:</label>
+                    <input type="text" id="Weight">
+                </div>
+                <div class="">
+                    <label for="height" class="text-lg font-semibold text-[#8fa399]">Height in cm:</label>
+                    <input type="text" id="height">
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="./script/script.js"></script>
 </body>
 
