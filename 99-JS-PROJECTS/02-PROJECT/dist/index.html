@@ -10,38 +10,44 @@
 </head>
 
 <body class="bg-[#375748]">
-    <div class="mt-4">
-        <div class="flex flex-col gap-7 h-screen items-center">
+    <div class="px-4">
+        <div class="flex flex-col gap-5 h-screen justify-center items-center">
             <div class="text-center text-[#d9e9e1]">
-                <h1 class="text-4xl font-normal">Calculate your</h1>
-                <h1 class="text-4xl font-normal">Body Mass Index</h1>
+                <h1 class="text-2xl sm:text-4xl font-normal">Calculate your</h1>
+                <h1 class="text-2xl sm:text-4xl font-normal">Body Mass Index</h1>
             </div>
-            <div class="flex flex-row gap-4">
-                <button type="button"
-                    class="px-11 py-1 rounded-lg text-lg font-semibold bg-[#5e786b] text-[#8fa399]">Standard</button>
-                <button type="button"
-                    class="px-11 py-1 rounded-lg text-lg font-semibold bg-[#f1f3f2] text-[#484d4a]">Metric</button>
-            </div>
+            <div class="px-11 py-1 rounded-lg text-lg font-semibold bg-[#8fa399] text-[#375748]">Standard</div>
             <div class="flex flex-row gap-7">
-                <button type="button" class="rounded-lg bg-[#5e786b]">
-                    <i class="fa-solid fa-person text-9xl px-8 py-4 text-[#f1f3f2]"></i>
-                    <h1 class="text-xl font-semibold text-[#f1f3f2]">Male</h1>
-                </button>
-                <button type="button" class="rounded-lg bg-[#5e786b]">
-                    <i class="fa-solid fa-person-dress text-9xl px-8 py-4 text-[#8fa399]"></i>
-                    <h1 class="text-xl font-semibold text-[#8fa399]">Female</h1>
-                </button>
+                <div class="rounded-lg bg-[#5e786b]">
+                    <i class="fa-solid fa-person text-8xl sm:text-9xl px-8 py-4 text-[#8fa399]"></i>
+                    <h1 class="text-xl text-center font-semibold text-[#375748]">Male</h1>
+                </div>
+                <div class="rounded-lg bg-[#5e786b]">
+                    <i class="fa-solid fa-person-dress text-8xl sm:text-9xl px-8 py-4 text-[#8fa399]"></i>
+                    <h1 class="text-xl text-center font-semibold text-[#375748]">Female</h1>
+                </div>
             </div>
-            <form action="post">
-                <div class="">
-                    <label for="Weight" class="text-lg font-semibold text-[#8fa399]">Weight in kg:</label>
-                    <input type="text" id="Weight">
+            <form class="flex flex-col gap-5">
+                <div class="flex flex-row items-center gap-9">
+                    <label for="weight" class="font-xs sm:text-lg font-semibold text-[#8fa399]">Weight in kg:</label>
+                    <input type="text" id="weight"
+                        class="outline-none rounded-lg place-items-center w-14 h-10 sm:w-15 md:w-20 sm:h-8 py-1 px-2">
                 </div>
-                <div class="">
-                    <label for="height" class="text-lg font-semibold text-[#8fa399]">Height in cm:</label>
-                    <input type="text" id="height">
+                <div class="flex flex-row items-center gap-9">
+                    <label for="height" class="font-xs sm:text-lg font-semibold text-[#8fa399]">Height in cm:</label>
+                    <input type="text" id="height"
+                        class="outline-none rounded-lg place-items-center w-14 h-10 sm:w-15 md:w-20 sm:h-8 py-1 px-2">
                 </div>
+                <button type="submit"
+                    class="px-11 py-2 rounded-lg text-lg font-semibold bg-[#f1f3f2] text-[#375748]">Calculate</button>
             </form>
+            <div id="result" class="text-lg font-semibold text-[#f1f3f2]"></div>
+            <div class="text-[#8fa399]">
+                <h2 class="text-lg font-semibold">BMI weight Guide</h2>
+                <li class="text-base font-semibold">under weight = less than 18.6</li>
+                <li class="text-base font-semibold">normal range = 18.6 and 24.9</li>
+                <li class="text-base font-semibold">overweight = greater than 24.9</li>
+            </div>
         </div>
     </div>
     <script src="./script/script.js"></script>
