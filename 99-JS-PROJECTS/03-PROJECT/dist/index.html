@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Project - iii</title>
+</head>
+
+<body class="bg-gray-600">
+    <div class="flex flex-col gap-4 justify-center items-center text-center h-screen">
+        <h2 class="text-gray-200 font-bold underline text-3xl">NUMBER GUESSING GAME</h2>
+        <div class="text-gray-200 text-xl">
+            <p class="">Try and Guess a random number between 1 to 100.</p>
+            <p class="">You have 10 attempts to guess the right</p>
+        </div>
+        <form action="" class="flex flex-col gap-3">
+            <label for="inputNumber" class="text-gray-200 font-bold text-3xl">Guess number</label>
+            <input type="number" name="enterNumber" id="inputNumber"
+                class="outline-none text-center py-2 px-1 rounded-md text-2xl right-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-in font-bold text-gray-600">
+            <button type="submit"
+                class="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition duration-350 ease-in-out hover:scale-105 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500">SUBMIT
+                GUESS</button>
+        </form>
+        <h2 class="text-gray-200 font-bold text-2xl">Previous Guesses</h2>
+        <h2 class="text-gray-200 font-bold text-2xl">Guesses Remaining</h2>
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
