@@ -25,9 +25,7 @@ if (playGame) {
 }
 
 function validateGuess(guess) {
-  if (guess == " ") {
-    displayMessage("Plese Enter Number");
-  } else if (isNaN(guess)) {
+  if (isNaN(guess)) {
     displayMessage("Please Enter Valid Input");
   } else if (guess > 99) {
     displayMessage("Please Enter less then 100 Number");
@@ -84,7 +82,7 @@ function newGame() {
     randomNumber = getRndInteger(1, 100);
     prevGuess = [];
     guessNumbers.innerHTML = "";
-    guessAttempt = 10;
+    guessAttempt = 1;
     remainAttempt.innerHTML = " ";
     guideMessage.innerHTML = "";
     inputNumber.removeAttribute("disabled");
