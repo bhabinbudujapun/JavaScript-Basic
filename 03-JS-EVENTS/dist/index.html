@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/fav-icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a03c2a7c2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <title>EVENTS INTRO.</title>
 </head>
@@ -11,25 +13,29 @@
 <body class="bg-gray-600 m-5">
     <div class="flex flex-col justify-center items-center">
         <h2 class="text-gray-200 text-2xl font-extrabold mb-1">IMAGE COLLECTION</h2>
-        <div class="flex flex-col sm:flex-row images" id="">
-            <div class="flex-1 p-5">
+        <div class="flex flex-col sm:flex-row images">
+            <div class="flex-1 p-5 relative">
                 <h2 class="text-gray-300 text-2xl font-extrabold mb-2">HTML/CSS</h2>
-                <img src="./assets/front-end.jpg" alt="" id="html" srcset="">
+                <i class="fa-solid fa-circle-xmark text-red-600 text-2xl absolute top-15 right-6 hover:scale-110 hover:text-red-500 cursor-pointer"></i>
+                <img src="./assets/front-end.jpg" alt="html" id="html" srcset="">
             </div>
-            <div class="flex-1 p-5">
+            <div class="flex-1 p-5 relative">
                 <h2 class="text-gray-300 text-2xl font-extrabold mb-2">JAVASCRIPT</h2>
-                <img src="./assets/javascript.jpg" alt="" id="js" srcset="">
+                <i class="fa-solid fa-circle-xmark text-red-600 text-2xl absolute top-15 right-6 hover:scale-110 hover:text-red-500 cursor-pointer"></i>
+                <img src="./assets/javascript.jpg" alt="javascript" id="javascript" srcset="">
             </div>
         </div>
-        <div class="flex flex-col sm:flex-row images" id="">
-            <div class="flex-1 p-5">
+        <div class="flex flex-col sm:flex-row images">
+            <div class="flex-1 p-5 relative">
                 <h2 class="text-gray-300 text-2xl font-extrabold mb-2">PHP/SQL</h2>
-                <img src="./assets/php.jpg" alt="" id="php" srcset="">
+                <i class="fa-solid fa-circle-xmark text-red-600 text-2xl absolute top-15 right-6 hover:scale-110 hover:text-red-500 cursor-pointer"></i>
+                <img src="./assets/php.jpg" alt="php" id="php" srcset="">
             </div>
-            <div class="flex-1 p-5 flex flex-col" id="python-div">
+            <div class="flex-1 p-5 relative">
                 <h2 class="text-gray-300 text-2xl font-extrabold mb-2">CMS</h2>
-                <!-- onclick="alert('alert python')" -->
-                <img src="./assets/cms.jpg" alt="" id="python-img" srcset="">
+                <!-- onclick="alert('alert CMS')" -->
+                <i class="fa-solid fa-circle-xmark text-red-600 text-2xl absolute top-15 right-6 hover:scale-110 hover:text-red-500 cursor-pointer"></i>
+                <img src="./assets/cms.jpg" alt="cms" id="cms" srcset="">
             </div>
         </div>
         <div class="flex flex-col sm:flex-row">
