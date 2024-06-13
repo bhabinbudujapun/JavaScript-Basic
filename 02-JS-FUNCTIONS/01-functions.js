@@ -94,18 +94,34 @@
 // const s1 = new student();
 
 // For of loop and about (...args)
-function SumofNumbers(...args) {
-  for (let val of args) {
-    console.log(val);
-  }
-}
-SumofNumbers(1, 2, 3, 4, 5);
+// function SumofNumbers(...args) {
+//   for (let val of args) {
+//     console.log(val);
+//   }
+// }
+// SumofNumbers(1, 2, 3, 4, 5);
 
 // Function parameters
 // There are two special kinds of parameter syntax: default parameters and rest parameters.
-function multiply(a, b) {
-  b = typeof b !== "undefined" ? b : 1;
-  return a * b;
+// function multiply(a, b) {
+//   b = typeof b !== "undefined" ? b : 1;
+//   return a * b;
+// }
+
+// console.log(multiply(5));
+
+// Rest parameters (..agrs)
+// Sometimes there is a cases we don't the number of paramenter
+// Passing Array Elements as Function Arguments:
+// Creating a New Array by Concatenating Arrays:
+// Copying Arrays:
+// Creating Object Literals with Merged Properties:
+// String to Array Conversion:
+
+function multiplier(number, ...values) {
+  for (let index = 0; index < values.length; index++) {
+    console.log(values[index]);
+  }
 }
 
-console.log(multiply(5));
+multiplier(2, 3, 4, 5, 6);
