@@ -11,8 +11,6 @@ form.addEventListener("submit", function (e) {
 
   if (weight < 0 || weight == "" || isNaN(weight)) {
     result.innerHTML = "Invalid input";
-  } else if (height < 0 || height == "" || isNaN(height)) {
-    result.innerHTML = "Invalid input";
   } else {
     const calc = (weight / ((height * height) / 10000)).toFixed(2);
     var message = "";

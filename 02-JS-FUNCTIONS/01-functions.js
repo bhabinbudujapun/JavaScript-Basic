@@ -118,10 +118,32 @@
 // Creating Object Literals with Merged Properties:
 // String to Array Conversion:
 
-function multiplier(number, ...values) {
-  for (let index = 0; index < values.length; index++) {
-    console.log(values[index]);
+// function multiplier(number, ...values) {
+//   for (let index = 0; index < values.length; index++) {
+//     console.log(values[index]);
+//   }
+// }
+
+// multiplier(2, 3, 4, 5, 6);
+
+// HOF - Higher Order Function
+function filterNumber(numbers, callback) {
+  let collectNumber = [];
+  for (let index = 0; index < numbers.length; index++) {
+    callback(numbers[index]) ? collectNumber.push(numbers[index]) : null;
   }
+  return collectNumber;
 }
 
-multiplier(2, 3, 4, 5, 6);
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+function isOdd(number) {
+  return number % 2 !== 0;
+}
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(filterNumber(numbers, isEven));
+console.log(filterNumber(numbers, isOdd));
